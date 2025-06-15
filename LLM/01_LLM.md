@@ -79,8 +79,11 @@ def attention(query, key, value):
 ## 📈 훈련 과정
 
 ### 1. 사전 훈련 (Pre-training)
-![Training Process](https://raw.githubusercontent.com/jalammar/jalammar.github.io/master/images/gpt2/gpt2-training-language-modeling.png)
+![Training Process](https://raw.githubusercontent.com/rasbt/LLMs-from-scratch/main/images/mental-model.jpg)
 
+![Training Process](https://github.blog/wp-content/uploads/2023/10/LLM-App-Architecture.png)
+
+![Training Process](https://via.placeholder.com/800x400/2563eb/ffffff?text=LLM+Training+Process%0AData+→+Tokenize+→+Train+→+Model)
 ```mermaid
 graph LR
     A[대용량 텍스트 데이터] --> B[토큰화]
