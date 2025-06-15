@@ -79,8 +79,22 @@ def attention(query, key, value):
 ## 📈 훈련 과정
 
 ### 1. 사전 훈련 (Pre-training)
-![Training Process](https://raw.githubusercontent.com/jalammar/jalammar.github.io/master/images/gpt2/gpt2-training-language-modeling.png)
-
+### 1. 사전 훈련 (Pre-training)
+📊 LLM 훈련 과정 (Training Process)
+┌─────────────────────────────────────────────────────────┐
+│                                                         │
+│  📚 대용량 텍스트 데이터 (수조 개 토큰)                     │
+│           ↓                                             │
+│  🔤 토큰화 (Tokenization)                                │
+│     "Hello world" → ["Hello", ",", " world"]            │
+│           ↓                                             │
+│  🎯 다음 단어 예측 학습 (Next Token Prediction)           │
+│     입력: "The cat is"  →  예측: "sleeping"              │
+│           ↓                                             │
+│  ⚙️ 기본 언어 모델 완성                                   │
+│     (GPT, BERT, LLaMA 등)                               │
+│                                                         │
+└─────────────────────────────────────────────────────────┘
 ```mermaid
 graph LR
     A[대용량 텍스트 데이터] --> B[토큰화]
